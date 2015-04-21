@@ -81,17 +81,17 @@
           <div class="row">
         {% endif %}
         <!-- ONLY DISPLAYS ON EXTRA SMALL SCREENS using visible-xs -->
-        <div class="col-xs-6 visible-xs" id="readNextExtraSmall">
+        <div class="col-xs-6 visible-xs" id="readNextItem">
           <center>
             <a href="{% url 'showArticle' article.id %}">
               <img class="img-thumbnail" id="thumbFooter" src="{{ article.article_thumbnail_optional.url }}" /><br>
-              <h4>{{ article.article_title | truncatechars:30 }}</h4>
+              <h4>{{ article.article_title | truncatechars:32 }}</h4>
             </a>
           </center>
         </div>
 
         <!-- ONLY DISPLAYS ON SMALL SCREENS using visible-sm -->
-        <div class="col-sm-6 visible-sm" id="readNextSmall">
+        <div class="col-sm-6 visible-sm" id="readNextItem">
           <center>
             <a href="{% url 'showArticle' article.id %}">
               <img class="img-thumbnail" id="thumbFooter" src="{{ article.article_thumbnail_optional.url }}" /><br>
@@ -101,7 +101,7 @@
         </div>
 
         <!-- ONLY DISPLAYS ON MEDIUM & LARGE SCREENS using visible-md visible-lg -->
-        <div class="col-md-3 visible-md visible-lg" id="readNextLarge">
+        <div class="col-md-3 visible-md visible-lg" id="readNextItem">
           <center>
             <a href="{% url 'showArticle' article.id %}">
               <img class="img-thumbnail" id="thumbFooter" src="{{ article.article_thumbnail_optional.url }}" /><br>

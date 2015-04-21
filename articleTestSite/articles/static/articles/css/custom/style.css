@@ -293,12 +293,15 @@ body{
 	#pageContainer{
 	}
 
-
 	/*****************************************/
 	/*  MODIFY THE 'readNext' container div  */
 	/*****************************************/
 	#readNext{
 		left: 215px;	
+	}
+
+	#readNext #readNextItem{
+		height: 170px;
 	}
 
 	#readNext #prevButton{
@@ -337,20 +340,24 @@ body{
 		left: 205px;	
 	}
 
+	#readNext #readNextItem{
+		height: 190px;
+	}
+
 	#readNext #prevButton{
 		left: -50px;
-		top: 165px;
+		top: 150px;
 		font-size: 35px;
 	}
 
 	#readNext #nextButton{
 		right: -50px;
-		top: 165px;
+		top: 150px;
 		font-size: 35px;
 	}
 
 	#readNext img{
-		width: 240px;
+		width: 230px;
 	}
 
 	#readNext h4{
@@ -358,7 +365,7 @@ body{
 		position: relative;
 		top: -8px;
 	}
-	}
+}
 
 
 @media all and (max-width: 900px){
@@ -393,7 +400,6 @@ body{
 		left: 150px;
 	}
 
-
 	/*****************************************/
 	/*  MODIFY THE 'readNext' container div  */
 	/*****************************************/
@@ -401,15 +407,19 @@ body{
 		left: 180px;	
 	}
 
+	#readNext #readNextItem{
+		height: 170px;
+	}
+
 	#readNext #prevButton{
 		left: -30px;
-		top: 150px;
+		top: 130px;
 		font-size: 35px;
 	}
 
 	#readNext #nextButton{
 		right: -30px;
-		top: 150px;
+		top: 130px;
 		font-size: 35px;
 	}
 
@@ -418,7 +428,7 @@ body{
 	}
 
 	#readNext h4{
-		font-size: 15px;
+		font-size: 13px;
 	}
 
 	#readNext #readNextExtraSmall{  display: none;  }
@@ -427,6 +437,11 @@ body{
 
 }
 
+@media all and (max-width: 800px){
+	#readNext #readNextItem{
+		height: 164px;
+	}
+}
 
 
 @media all and (max-width: 700px){
@@ -452,15 +467,21 @@ body{
 		left: 75px;	
 	}
 
+
+	#readNext #readNextItem{
+		height: 144px;
+	}
+
+
 	#readNext #prevButton{
 		left: -50px;
-		top: 115px;
+		top: 107px;
 		font-size: 50px;
 	}
 
 	#readNext #nextButton{
 		right: -45px;
-		top: 115px;
+		top: 107px;
 		font-size: 50px;
 	}
 
@@ -469,7 +490,7 @@ body{
 	}
 
 	#readNext h4{
-		font-size: 13px;
+		font-size: 11px;
 	}
 
 	#readNext #readNextExtraSmall{  display: visible;  }
@@ -478,6 +499,19 @@ body{
 
 }
 
+
+@media all and (max-width: 625px){
+	#readNext #readNextItem{
+		height: 145px;
+	}
+}
+
+
+@media all and (max-width: 550px){
+	#readNext #readNextItem{
+		height: 132px;
+	}
+}
 
 
 @media all and (max-width: 500px){
@@ -504,20 +538,24 @@ body{
 		width: 85%;
 	}
 
+	#readNext #readNextItem{
+		height: 132px;
+	}
+
 	#readNext #prevButton{
 		left: -26px;
-		top: 80px;
+		top: 105px;
 		font-size: 22px;
 	}
 
 	#readNext #nextButton{
 		right: -26px;
-		top: 80px;
+		top: 105px;
 		font-size: 22px;
 	}
 
 	#readNext img{
-		width: 175px;
+		width: 150px;
 	}
 
 	#readNext h4{
@@ -528,4 +566,26 @@ body{
 	#readNext #readNextSmall{  display: none;  }
 	#readNext #readNextLarge{  display: none;  }
 
+}
+
+
+@media all and (max-width: 425px){
+	#readNext #readNextItem{
+		height: 130px;
+	}
+}
+
+
+@media all and (max-width: 350px){
+	#readNext #readNextItem{
+		height: 105px;
+	}
+
+	#readNext #prevButton{
+		top: 80px;
+	}
+
+	#readNext #nextButton{
+		top: 80px;
+	}
 }
