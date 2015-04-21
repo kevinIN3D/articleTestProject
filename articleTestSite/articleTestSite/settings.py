@@ -14,6 +14,7 @@ https://docs.djangoproject.com/en/1.8/ref/settings/
 import os
 
 BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), os.path.pardir))
+print(BASE_DIR)
 #BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 MEDIA_ROOT = os.path.join(BASE_DIR, 'articles/static/articles/').replace('\\', '/') #'C:/Users/kevIN3D/Documents/GitHub/articleTestProject/articleTestSite/articles/static/articles/'
 MEDIA_URL = '/media/'
